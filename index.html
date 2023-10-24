@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Service Name</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label, input, textarea {
+            display: block;
+            margin: 10px 0;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .paypal-link {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        button[type="submit"] {
+            background-color: #222;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HirePlay 2023</h1>
+        <h2>Welcome to HirePlay, Play PS5 and new games remotely</h2>
+        <div class="paypal-link">
+            <a href="https://paypal.me/HirePlay2023?country.x=AU&locale.x=en_AU" target="_blank">Pay with PayPal</a>
+        </div>
+    </header>
+    <div class="container">
+        <form action="https://formsubmit.co/hireplay2023@outlook.com" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="time">Length of Time (30 min blocks):</label>
+            <input type="number" id="time" name="time" required>
+
+            <label for="receipt">Receipt Number:</label>
+            <input type="text" id="receipt" name="receipt" required>
+
+            <label for="message">Additional Comments:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </div>
+</body>
+</html>
